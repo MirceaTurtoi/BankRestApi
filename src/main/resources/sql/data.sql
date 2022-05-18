@@ -1,0 +1,37 @@
+--create table if not exists user(
+--	id int primary key auto_increment,
+--    username varchar(20) not null,
+--    password varchar(80) not null
+--);
+--
+--create table if not exists account(
+--	id int primary key auto_increment,
+--    balance double,
+--    currency enum("RON", "EUR", "USD"),
+--    name varchar(20),
+--    user_id int,
+--    constraint FK_user_account foreign key (user_id) references user(id)
+--);
+--
+--create table if not exists transaction(
+--	id int primary key auto_increment,
+--    amount double,
+--    fee double,
+--    date datetime,
+--    status enum("PENDING", "APPROVED", "DENIED"),
+--    id_account_to int,
+--    id_account_from int,
+--    constraint FK_account_to foreign key (id_account_to) references account(id),
+--    constraint FK_account_from foreign key (id_account_from) references account(id)
+--);
+--
+--INSERT INTO user(username, password) VALUES ("user1", "parola1");
+--INSERT INTO user(username, password) VALUES ("user2", "parola2");
+--INSERT INTO user(username, password) VALUES ("user3", "parola3");
+--INSERT INTO user(username, password) VALUES ("user4", "parola4");
+--INSERT INTO account(balance, name, currency, user_id) VALUES (10000.0, "name1", "RON", 1);
+--INSERT INTO account(balance, name, currency, user_id) VALUES (8000.0, "name2", "EUR", 1);
+--INSERT INTO account(balance, name, currency, user_id) VALUES (15000.0, "name3", "USD", 2);
+--INSERT INTO account(balance, name, currency, user_id) VALUES (7600.0, "name4", "EUR", 3);
+--INSERT INTO account(balance, name, currency, user_id) VALUES (15000.0, "name5", "USD", 4);
+--INSERT INTO account(balance, name, currency, user_id) VALUES (8000.0, "name6", "EUR", 4);
